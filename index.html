@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+<title>Modern Menswear | Contemporary Elegance</title>
+<style>
+:root{--black:#111;--white:#faf9f6;--gray:#777;--line:#dedbd5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--black);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+.topbar{text-align:center;background:#111;color:white;padding:10px;font-size:10px;letter-spacing:2px}
+header{padding:22px 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.logo{font-family:Georgia,serif;font-size:19px;letter-spacing:3px}
+nav{display:flex;gap:22px;font-size:11px;letter-spacing:1px}
+.bag{font-size:12px}
+.hero{min-height:510px;background:#dedbd5;display:flex;align-items:center;padding:8%;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:7%;top:8%;width:38%;height:84%;background:linear-gradient(145deg,#aaa59c,#4c4945 52%,#171717);border-radius:48% 48% 8px 8px;opacity:.88}
+.hero-content{position:relative;z-index:1;max-width:440px}
+.eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase}
+h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(42px,7vw,76px);line-height:1.02;margin:22px 0}
+.hero p{color:#444;font-size:14px;line-height:1.8;max-width:300px}
+.button{display:inline-block;background:#111;color:white;padding:15px 24px;font-size:10px;letter-spacing:2px;margin-top:15px;border:1px solid #111;cursor:pointer}
+.section{padding:65px 6%}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:28px}
+h2{font-family:Georgia,serif;font-size:34px;font-weight:400;margin:0 0 8px}
+.muted{color:var(--gray);font-size:12px;line-height:1.7}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.product-art{height:270px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:#e8e5df}
+.product-art.dark{background:#d6d2ca}
+.coat{height:72%;width:46%;background:#242424;clip-path:polygon(28% 0,43% 7%,57% 7%,72% 0,100% 25%,83% 42%,73% 32%,78% 100%,22% 100%,27% 32%,17% 42%,0 25%);filter:drop-shadow(5px 8px 8px #888)}
+.coat.light{background:#b7b1a7}
+.coat.suit{background:#4c4a46}
+.product-info{padding:14px 0}
+.product-info h3{font-size:13px;font-weight:500;margin:0 0 7px}
+.price{font-size:12px;color:#555}
+.tag{font-size:9px;letter-spacing:1.5px;color:#777;margin-bottom:8px}
+.add{margin-top:12px;background:transparent;border:1px solid #222;padding:10px 12px;font-size:10px;letter-spacing:1px;cursor:pointer}
+.collections{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.collection{min-height:230px;padding:28px;display:flex;flex-direction:column;justify-content:end;background:#252525;color:#fff}
+.collection:nth-child(2){background:#d8d3ca;color:#111}
+.collection span{font-size:10px;letter-spacing:2px}
+.collection h3{font:32px Georgia,serif;margin:10px 0}
+.about{background:#eeeae3;text-align:center;padding:65px 12%}
+.about p{max-width:580px;margin:18px auto;color:#555;font-size:13px;line-height:1.9}
+footer{background:#111;color:#eee;padding:35px 6%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:11px;letter-spacing:1px}
+#notice{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#111;color:white;padding:14px 20px;font-size:12px;display:none;z-index:5;white-space:nowrap}
+@media(max-width:650px){header{padding:18px 5%;flex-wrap:wrap;gap:15px}nav{order:3;width:100%;justify-content:space-between;gap:10px}.hero{min-height:470px;padding:8% 6%;align-items:flex-start}.hero:after{right:-12%;top:40%;width:55%;height:55%;opacity:.55}.hero-content{max-width:90%}h1{font-size:48px}.hero p{max-width:240px}.section{padding:45px 5%}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-art{height:210px}.section-head{align-items:start;flex-direction:column}h2{font-size:29px}.collections{grid-template-columns:1fr}.collection{min-height:190px}.about{padding:48px 7%}}
+</style>
+</head>
+<body>
+<div class="topbar">TIMELESS STYLE · CONTEMPORARY MENSWEAR</div>
+<header>
+<a class="logo" href="#">ATELIER / M</a>
+<nav><a href="#new">NEW ARRIVALS</a><a href="#collection">COLLECTIONS</a><a href="#about">OUR PHILOSOPHY</a></nav>
+<a class="bag" href="#new">BAG (<span id="count">0</span>)</a>
+</header>
+<main>
+<section class="hero">
+<div class="hero-content">
+<div class="eyebrow">The art of dressing well</div>
+<h1>Quiet luxury.<br>Strong presence.</h1>
+<p>Considered essentials for the modern man. Refined silhouettes, timeless tones, effortless confidence.</p>
+<a class="button" href="#new">DISCOVER THE COLLECTION</a>
+</div>
+</section>
+<section class="section" id="new">
+<div class="section-head"><div><div class="eyebrow">Carefully selected</div><h2>Selected pieces</h2><div class="muted">A first look at our collection.</div></div><span class="muted">01 — 03</span></div>
+<div class="products">
+<article><div class="product-art"><div class="coat"></div></div><div class="product-info"><div class="tag">ESSENTIALS</div><h3>Classic Tailored Jacket</h3><div class="price">Price to be confirmed</div><button class="add" onclick="addItem('Classic Tailored Jacket')">ADD TO BAG +</button></div></article>
+<article><div class="product-art dark"><div class="coat light"></div></div><div class="product-info"><div class="tag">NEW SEASON</div><h3>Modern Neutral Coat</h3><div class="price">Price to be confirmed</div><button class="add" onclick="addItem('Modern Neutral Coat')">ADD TO BAG +</button></div></article>
+<article><div class="product-art"><div class="coat suit"></div></div><div class="product-info"><div class="tag">SIGNATURE</div><h3>Evening Suit Jacket</h3><div class="price">Price to be confirmed</div><button class="add" onclick="addItem('Evening Suit Jacket')">ADD TO BAG +</button></div></article>
+</div>
+</section>
+<section class="section" id="collection">
+<div class="eyebrow">Find your signature</div><h2 style="margin-top:12px;margin-bottom:25px">Made for every occasion.</h2>
+<div class="collections"><a class="collection" href="#new"><span>01 / EVERYDAY</span><h3>The daily edit</h3><span>EXPLORE THE EDIT ↗</span></a><a class="collection" href="#new"><span>02 / AFTER HOURS</span><h3>Beyond ordinary</h3><span>EXPLORE THE EDIT ↗</span></a></div>
+</section>
+<section class="about" id="about"><div class="eyebrow">Our philosophy</div><h2 style="margin-top:15px">Less, but better.</h2><p>We believe true style speaks quietly. Thoughtful design, enduring simplicity, and pieces chosen to become part of your story. This is a space for timeless menswear.</p></section>
+</main>
+<footer><span class="logo">ATELIER / M</span><span>TIMELESS BY DESIGN.</span><span>CONTACT · SHIPPING · RETURNS</span><span>© 2026</span></footer>
+<div id="notice" role="status"></div>
+<script>
+let bagCount=0;
+function addItem(name){bagCount++;document.getElementById('count').textContent=bagCount;const n=document.getElementById('notice');n.textContent=name+' added to your demo bag';n.style.display='block';setTimeout(()=>n.style.display='none',2200)}
+</script>
+</body>
+</html>
